@@ -34,7 +34,7 @@ public static void main(String[] args) {
         System.out.println("ENTER INTEGERS TO CREATE NODES (ENTER A NON-INTEGER TO EXIT):");
         while (sc.hasNext())
         {
-         
+
             if(sc.hasNextInt())
             {
             data = sc.nextInt();
@@ -55,6 +55,7 @@ public static void main(String[] args) {
             {
             data1=sc.nextInt();
             list.insertBegin(data1);
+            System.out.println("Element Inserted");
             System.out.println("LINKED LIST AFTER INSERTING");
             list.displayList();
             }
@@ -66,18 +67,16 @@ public static void main(String[] args) {
             }
            }
     }
-public void insertBegin(int data) 
-    {    
-         Node newNode=new Node(data);
-         if(head==null) {
-            head= newNode;
-            tail= newNode;
-         }
-         else {
-            newNode.next=head;
-            head= newNode;
-         }
-    } 
+ public void insertBegin(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
+    }
 public void displayList() {
         Node current = head;
         while (current != null) {

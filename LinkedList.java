@@ -46,10 +46,7 @@ public static void main(String[] args) {
             System.out.println("LINKED LIST CREATED");
             System.out.println("LINKED LIST BEFORE INSERTING");
             list.displayList();
-          //  System.out.println("ENTER THE POSITON WHERE YOU WANT TO INSERT");
-          //  if(sc.hasNextInt())
-           // {
-          //  pos=sc.nextInt();
+          
             System.out.println("ENTER THE ELEMENT TO BE INSERTED:");
             if(sc.hasNextInt())
             {
